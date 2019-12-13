@@ -9,3 +9,7 @@ Run the test_backprojection.m file to test the backprojection SNR and SSIM.
 
 ## Test Result
 ![](https://github.com/Flocculus/parallel-beam-X-ray-CT-reconstruction-by-using-pixel-basis/blob/master/Fig/F1.png)
+
+![](https://github.com/Flocculus/parallel-beam-X-ray-CT-reconstruction-by-using-pixel-basis/blob/master/Fig/F2.png)
+
+![](https://github.com/Flocculus/parallel-beam-X-ray-CT-reconstruction-by-using-pixel-basis/blob/master/Fig/F3.png)
