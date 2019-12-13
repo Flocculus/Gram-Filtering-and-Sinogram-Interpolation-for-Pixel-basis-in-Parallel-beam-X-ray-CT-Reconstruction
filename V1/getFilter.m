@@ -1,0 +1,9 @@
+function MyFilter = getFilter(thetaspace,n,width,xStep,yStep)
+table = grammatrix(thetaspace,n,width,xStep,yStep);
+row = zeros(n,2*n-1);
+tmp = reshape(table(1:n^2),n,n)';
+row(:,n:end) = tmp;
+row(:,1:n) = fliplr(reshape(table(n^2+1:end),n,n)');
+MyFilter=zeros(2*n-1);
+MyFilter(n:end,1:end)=row;
+MyFilter(1:n-1,1:end)=fliplr(flip(row(2:end,1:end),1));
