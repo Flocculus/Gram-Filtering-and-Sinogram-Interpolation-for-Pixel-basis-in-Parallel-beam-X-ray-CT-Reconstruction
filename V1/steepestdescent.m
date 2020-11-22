@@ -1,7 +1,7 @@
 function x = steepestdescent(fA, b,x, iMax)
 %start
 
-tmp = convxh(x,fA,[],true);
+tmp = fliplr(convxh(fliplr(x),fA,[],true));
 
 
 
@@ -15,7 +15,7 @@ for i = 1:iMax
         %fprintf("Done");
         break;
     end
-    q = convxh(r,fA,[],true);
+    q = fliplr(convxh(fliplr(r),fA,[],true));
     alpha = delta/(r(:)'*q(:));
     x = x + alpha * r;
     r = r - alpha * q;
